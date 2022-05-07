@@ -1,0 +1,48 @@
+{
+  "name": "art-weapon",
+  "version": "1.0.0",
+  "description": "Art Weapon Event Site",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development node app",
+    "dev": "nodemon app",
+    "compile:sass": "node-sass sass/main.scss public/css/main.css -w"
+  },
+  "author": "pledovski",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-mongo-sanitize": "^2.0.0",
+    "express-rate-limit": "^5.1.3",
+    "helmet": "^3.22.0",
+    "hpp": "^0.2.3",
+    "html-entities": "^1.3.3",
+    "i18n": "^0.13.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.9.16",
+    "morgan": "^1.10.0",
+    "node-geocoder": "^3.27.0",
+    "nodemailer": "^6.5.0",
+    "slugify": "^1.4.6",
+    "xss-clean": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pledovski/art-weapon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pledovski/art-weapon/issues"
+  },
+  "homepage": "https://github.com/pledovski/art-weapon#readme"
+}

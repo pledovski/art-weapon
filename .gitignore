@@ -1,0 +1,15 @@
+public/uploads/*
+node_modules/
+config/config.env
+
+
+# Mac crap
+.DS_Store
+public/uploads/.DS_Store
+
+# Personal crap
+.prettierignore
+.zshrc
+.vscode
+sandbox.txt
+sandbox.ejs
