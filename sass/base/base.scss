@@ -1,0 +1,33 @@
+@import "../base/colors.scss";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-white);
+  background-color: var(--background-color-grey);
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto;
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: $color-0;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,69 @@
+@import "../abstracts/typography-styles-mixins.scss";
+
+.nav-font {
+  @include nav-font;
+}
+
+.heading-1 {
+  @include heading-1;
+  @include respond(phone) {
+    @include heading-1--mob;
+  }
+}
+
+.heading-2 {
+  @include heading-2;
+  @include respond(phone) {
+    @include heading-2--mob;
+  }
+}
+
+.heading-3 {
+  @include respond(phone) {
+    @include heading-3--mob;
+  }
+  @include heading-3;
+}
+
+.heading-4 {
+  @include heading-4;
+  @include respond(phone) {
+    @include heading-4--mob;
+  }
+}
+
+.heading-5 {
+  @include heading-5;
+}
+
+.heading-6 {
+  @include heading-6;
+}
+
+.paragraph {
+  @include paragraph;
+}
+
+.tag {
+  @include tag;
+  color: $color-a;
+}
+
+.heading-4--mob {
+  @include heading-4--mob;
+}
+
+.heading-3--mob {
+  @include heading-3--mob;
+}
+
+.sub--mob {
+  @include sub--mob;
+}
+
+.btn-txt {
+  @include btn-txt;
+  @include respond(phone) {
+    @include btn-txt--mob;
+  }
+}

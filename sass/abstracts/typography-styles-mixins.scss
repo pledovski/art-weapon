@@ -1,0 +1,80 @@
+@import "mixins.scss", "fonts.scss", "breakpoints.scss", "../base/colors.scss";
+
+$font-hkgrotesk-regular: "HKGrotesk-Regular";
+$font-roboto-bold: "Roboto-Bold";
+$font-roboto-regular: "Roboto-Regular";
+
+$font-TenorSans-regular: "TenorSans-Regular";
+$font-Mont-regular: "Mont-Regular";
+$font-Mont-semibold: "Mont-SemiBold";
+
+// DESKTOP FONTS
+@mixin nav-font {
+  @include font($font-TenorSans-regular, 400, 1.3rem, 1.8rem, none, normal);
+}
+
+@mixin heading-1 {
+  @include font($font-TenorSans-regular, 400, 9.6rem, 10rem, none, normal);
+}
+
+@mixin heading-2 {
+  @include font($font-TenorSans-regular, 400, 3.6rem, 4.2rem, none, normal);
+}
+
+@mixin heading-3 {
+  @include font($font-TenorSans-regular, 400, 2.4rem, 3.2rem, none, normal);
+}
+
+@mixin heading-4 {
+  @include font($font-TenorSans-regular, 400, 1.8rem, 2.2rem, none, normal);
+}
+
+@mixin heading-5 {
+  @include font($font-Mont-regular, 400, 1.8rem, 2.4rem, none, normal);
+}
+
+@mixin heading-6 {
+  @include font($font-Mont-regular, 400, 1.6rem, 2.4rem, none, 0.09em);
+}
+
+@mixin paragraph {
+  @include font($font-Mont-regular, 400, 1.6rem, 2.4rem, none, normal);
+}
+
+@mixin tag {
+  @include font($font-Mont-regular, 400, 1.1rem, 1.4rem, uppercase, 0.07em);
+}
+
+@mixin btn-txt {
+  @include font($font-Mont-semibold, 500, 1.8rem, 2.3rem, none, 0.09em);
+}
+
+// MOBILE FONTS
+
+@mixin heading-1--mob {
+  @include font($font-TenorSans-regular, 400, 4.4rem, 6rem, none, normal);
+}
+
+@mixin heading-2--mob {
+  @include font($font-TenorSans-regular, 400, 2.8rem, 3.3rem, none, normal);
+}
+
+@mixin heading-3--mob {
+  @include font($font-TenorSans-regular, 400, 2rem, 2.3rem, none, normal);
+}
+
+@mixin heading-4--mob {
+  @include font($font-TenorSans-regular, 400, 1.4rem, 1.6rem, none, normal);
+}
+
+@mixin sub--mob {
+  @include font($font-TenorSans-regular, 400, 1.8rem, 2.1rem, none, normal);
+}
+
+@mixin tag--mob {
+  @include font($font-TenorSans-semibold, 500, 1.1rem, 1.4rem, uppercase, 0.07em);
+}
+
+@mixin btn-txt--mob {
+  @include font($font-Mont-semibold, 500, 1.4rem, 1.8rem, none, normal);
+}

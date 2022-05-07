@@ -1,0 +1,39 @@
+// $brake1: 3000px;
+// $brake1-1: 2000px; //max-width of cards in huge-size screens
+
+// $brake2: 1920px; //FullHD
+// $brake2-0: 1600px;
+// $brake2-1: 1500px; //Default
+// $brake2-2: 1300px; //Header max desctop width, coz have best min video width
+
+// $brake3: 1024px; //iPadPro
+// $brake3-1: 868px; //For main menu at header section
+
+// $brake4: 768px; //iPad
+// $brake4-1: 500px; //For title1 styles in this resolution
+
+// $brake5: 481px; //Mobile
+
+// $brake-end: 0px;
+
+// 0 - 600px       Phone               -   phone
+// 600 - 900px     Tablet portrait     -   tab-port
+// 900 - 1200px    Tablet landscape    -   tab-land
+// [1200 - 1800]   normal styles
+// 1800px + :      Big desctop         -   big-desk
+
+// 1em = 16px
+
+// $phone: 37.5em; //600px;
+$phone: 56.25em; //600px;
+$tab-port: 56.25em; //900px
+$tab-land: 75em; //1200px
+$big-desk: 112.5em; //1800px
+$med-desk: 90em; //1440px retina
+// $retina2x: (-webkit-min-device-pixel-ratio: 2),
+//   (
+//     min-device-pixel-ratio: 2
+//   ),
+//   (
+//     min-resolution: 192dpi
+//   );

@@ -1,0 +1,82 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+// MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: $phone) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media ($tab-port) {
+      //900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media ($tab-land) {
+      //1200px
+      @content;
+    }
+  }
+  @if $breakpoint == big-desk {
+    @media ($big-desk) {
+      //1800px
+      @content;
+    }
+  }
+  @if $breakpoint == med-desk {
+    @media (min-width: $med-desk) {
+      //1440px
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desk {
+    @media (min-width: 160em) {
+      //2560px
+      @content;
+    }
+  }
+}
+
+// Font styling mixin
+@mixin font($f-family, $f-weight, $f-size, $l-height, $case, $l-spacing) {
+  font: $f-weight #{$f-size}/#{$l-height} $f-family, sans-serif, open-sans;
+  letter-spacing: $l-spacing;
+  text-transform: $case;
+}
+
+@mixin underline {
+  content: "";
+  width: 40%;
+  left: 0;
+  top: 3.5rem;
+  z-index: -1;
+  border-bottom: 1.5rem solid $color-d;
+  @include respond(phone) {
+    top: 2.5rem;
+  }
+}
+
+@mixin overflow-x-scroll {
+  overflow-x: scroll;
+  box-sizing: content-box;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+
+@mixin overflow-y-scroll {
+  overflow-y: scroll;
+  box-sizing: content-box;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
