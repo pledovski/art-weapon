@@ -4,19 +4,19 @@
 
 @font-face {
   font-family: "WorkSans-Bold";
-  src: url("../src/fonts/roboto/WorkSans-Bold.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Semibold";
-  src: url("../src/fonts/roboto/WorkSans-Semibold.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Semibold.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Medium";
-  src: url("../src/fonts/roboto/WorkSans-Medium.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Medium.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Black";
-  src: url("../src/fonts/roboto/WorkSans-Black.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Black.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Regular";
@@ -24,19 +24,19 @@
 
 @font-face {
   font-family: "WorkSans-Bold";
-  src: url("../src/fonts/roboto/WorkSans-Bold.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Semibold";
-  src: url("../src/fonts/roboto/WorkSans-Semibold.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Semibold.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Medium";
-  src: url("../src/fonts/roboto/WorkSans-Medium.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Medium.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Black";
-  src: url("../src/fonts/roboto/WorkSans-Black.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Black.woff") format("woff"); }
 
 *,
 *::before,
@@ -71,19 +71,19 @@ ul {
 
 @font-face {
   font-family: "WorkSans-Bold";
-  src: url("../src/fonts/roboto/WorkSans-Bold.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Semibold";
-  src: url("../src/fonts/roboto/WorkSans-Semibold.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Semibold.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Medium";
-  src: url("../src/fonts/roboto/WorkSans-Medium.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Medium.woff") format("woff"); }
 
 @font-face {
   font-family: "WorkSans-Black";
-  src: url("../src/fonts/roboto/WorkSans-Black.woff") format("woff"); }
+  src: url("../src/fonts/WorkSans/WorkSans-Black.woff") format("woff"); }
 
 .hero-font {
   font: 500 16rem/10rem "WorkSans-Medium", sans-serif, open-sans;
@@ -179,7 +179,7 @@ button {
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 0.6rem;
+  column-gap: 2rem;
   margin-top: 9rem; }
   .hero__theatre {
     grid-column: 1 / 7; }
@@ -200,6 +200,8 @@ button {
         background-color: #ffc535; }
     .hero__desc__about {
       margin-top: 3.2rem; }
+      .hero__desc__about > p {
+        margin-bottom: 1rem; }
 
 .participants {
   margin-top: 10rem; }
@@ -212,14 +214,15 @@ button {
       border-radius: 50px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      cursor: pointer;
+      text-transform: capitalize; }
+      .participants ul li:hover {
+        background-color: #2d82df;
+        color: white; }
       .participants ul li.active {
-        background-color: #2d82df; }
-        .participants ul li.active p {
-          color: white; }
-      .participants ul li p {
-        color: black;
-        text-transform: capitalize; }
+        background-color: #2d82df;
+        color: white; }
   .participants--wrapper {
     padding-left: 12vw;
     display: flex;

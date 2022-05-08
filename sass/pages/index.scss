@@ -4,7 +4,7 @@
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 0.6rem;
+  column-gap: 2rem;
   margin-top: 9rem;
   &__theatre {
     grid-column: 1 / 7;
@@ -14,7 +14,6 @@
     &__meta {
       &__date {
         display: flex;
-
         align-items: center;
         div {
           margin-right: 1rem;
@@ -34,6 +33,9 @@
     }
     &__about {
       margin-top: 3.2rem;
+      > p {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
@@ -52,15 +54,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
+      text-transform: capitalize;
+      &:hover {
+        background-color: $color-main-b;
+        color: white;
+      }
       &.active {
         background-color: $color-main-b;
-        p {
-          color: white;
-        }
-      }
-      p {
-        color: black;
-        text-transform: capitalize;
+        color: white;
       }
     }
   }
