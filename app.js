@@ -14,9 +14,9 @@ const rateLimit = require("express-rate-limit");
 const hpp = require("hpp");
 
 // Load env vars
-dotenv.config({ path: "./config/config.env" });
+// dotenv.config({ path: "./config/config.env" });
 
-connectDB();
+// connectDB();
 
 // Define routes
 // View routes
