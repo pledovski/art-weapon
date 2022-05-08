@@ -83,11 +83,11 @@ app.use(errorHandler);
 let PORT;
 let IP;
 if (process.env.NODE_ENV === "development") {
-  PORT = 5000;
+  PORT = 3333;
   // IP = "192.168.1.93";
   IP = "127.0.0.1";
 } else {
-  PORT = process.env.PORT || 6000;
+  PORT = process.env.PORT || 3333;
   IP = "127.0.0.1";
 }
 
