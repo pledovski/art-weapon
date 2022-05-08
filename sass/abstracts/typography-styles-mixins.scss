@@ -11,7 +11,7 @@ $font-worksans-black: "WorkSans-Black";
   @include font($font-worksans-medium, 500, 16rem, 10rem, none, normal);
 }
 @mixin hero-font--mob {
-  @include font($font-worksans-medium, 300, 8rem, 5rem, none, normal);
+  @include font($font-worksans-medium, 300, 10rem, 6rem, none, normal);
 }
 
 @mixin heading-1 {

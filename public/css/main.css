@@ -89,7 +89,7 @@ ul {
   font: 500 16rem/10rem "WorkSans-Medium", sans-serif, open-sans;
   letter-spacing: normal;
   text-transform: none;
-  font: 300 8rem/5rem "WorkSans-Medium", sans-serif, open-sans;
+  font: 300 10rem/6rem "WorkSans-Medium", sans-serif, open-sans;
   letter-spacing: normal;
   text-transform: none; }
 
@@ -156,6 +156,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 12vw; }
+  @media (max-width: 56.25em) {
+    header {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      background-color: white;
+      width: 100%; } }
   header .branding {
     display: flex;
     flex-direction: row;
@@ -168,6 +175,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    @media (max-width: 56.25em) {
+      header nav {
+        display: none; } }
     header nav ul {
       display: flex;
       flex-direction: row;
@@ -175,9 +185,6 @@ header {
       align-items: center; }
       header nav ul li {
         margin-right: 2rem; }
-  @media (max-width: 56.25em) {
-    header {
-      display: none; } }
 
 button {
   border: none;
@@ -195,7 +202,8 @@ button {
   @media (max-width: 56.25em) {
     .hero {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 16rem; } }
   .hero__theatre {
     grid-column: 1 / 7; }
   .hero__desc {

@@ -5,6 +5,14 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 12vw;
+  @include respond(phone) {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: white;
+    // padding: 0;
+    width: 100%;
+  }
   .branding {
     display: flex;
     flex-direction: row;
@@ -19,6 +27,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // PHONE ==========================================================================
+    @include respond(phone) {
+      display: none;
+    }
     ul {
       display: flex;
       flex-direction: row;
@@ -28,9 +40,5 @@ header {
         margin-right: 2rem;
       }
     }
-  }
-  // PHONE ==========================================================================
-  @include respond(phone) {
-    display: none;
   }
 }

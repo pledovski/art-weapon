@@ -9,6 +9,7 @@
   @include respond(phone) {
     display: flex;
     flex-direction: column;
+    margin-top: 16rem;
   }
   &__theatre {
     grid-column: 1 / 7;
