@@ -2,13 +2,14 @@
 
 .hero-font {
   @include hero-font;
+  @include hero-font--mob;
 }
 
 .heading-1 {
   @include heading-1;
-  // @include respond(phone) {
-  //   @include heading-1--mob;
-  // }
+  @include respond(phone) {
+    @include heading-1--mob;
+  }
 }
 
 .heading-2 {

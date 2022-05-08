@@ -1,4 +1,4 @@
-@import "../base/colors.scss";
+@import "../base/colors.scss", "../abstracts/mixins.scss";
 
 //HERO SECTION ===========================
 .hero {
@@ -6,11 +6,18 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
   margin-top: 9rem;
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+  }
   &__theatre {
     grid-column: 1 / 7;
   }
   &__desc {
     grid-column: 7 / 13;
+    @include respond(phone) {
+      margin-top: 6rem;
+    }
     &__meta {
       &__date {
         display: flex;
@@ -44,9 +51,18 @@
 // TABS SWITCHERS =======================
 .participants {
   margin-top: 10rem;
+  @include respond(phone) {
+    margin-top: 4rem;
+  }
   ul {
     display: flex;
     margin-top: 6rem;
+    @include respond(phone) {
+      width: 100%;
+      overflow-x: scroll;
+      padding: 0 0 0 12vw !important;
+      margin-top: 2rem;
+    }
     li {
       background-color: #d4d4d4;
       padding: 2rem 4rem;
@@ -56,6 +72,9 @@
       align-items: center;
       cursor: pointer;
       text-transform: capitalize;
+      @include respond(phone) {
+        padding: 0.4rem 2rem;
+      }
       &:hover {
         background-color: $color-main-b;
         color: white;
@@ -71,7 +90,6 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    // margin-right: -4vw;
     overflow-x: scroll;
     > div {
       display: none;
@@ -88,6 +106,10 @@
       max-width: 56rem;
       height: auto;
       margin: 0 2rem 0 0;
+      @include respond(phone) {
+        min-width: 80vw;
+        max-width: 90vw;
+      }
       &:last-of-type {
         margin-right: 0;
       }
@@ -132,21 +154,38 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
   margin: 10rem 0;
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
   &__title {
     grid-column: 1 / 7;
     img {
       width: 100%;
       height: auto;
+      @include respond(phone) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
     }
   }
   &__text {
     grid-column: 7 / 10;
+    @include respond(phone) {
+      margin-top: 6rem;
+    }
     p {
       margin-bottom: 2rem;
     }
   }
   &__details {
     grid-column: 10 / 13;
+    @include respond(phone) {
+      padding-bottom: 2rem;
+    }
     > div {
       border-radius: 50px;
       border: 1px solid black;

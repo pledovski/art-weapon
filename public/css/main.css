@@ -88,12 +88,20 @@ ul {
 .hero-font {
   font: 500 16rem/10rem "WorkSans-Medium", sans-serif, open-sans;
   letter-spacing: normal;
+  text-transform: none;
+  font: 300 8rem/5rem "WorkSans-Medium", sans-serif, open-sans;
+  letter-spacing: normal;
   text-transform: none; }
 
 .heading-1 {
   font: 400 9.6rem/10rem "WorkSans-Medium", sans-serif, open-sans;
   letter-spacing: normal;
   text-transform: none; }
+  @media (max-width: 56.25em) {
+    .heading-1 {
+      font: 400 4.6rem/6rem "WorkSans-Medium", sans-serif, open-sans;
+      letter-spacing: normal;
+      text-transform: none; } }
 
 .heading-2 {
   font: 500 2rem/2.8rem "WorkSans-Medium", sans-serif, open-sans;
@@ -167,6 +175,9 @@ header {
       align-items: center; }
       header nav ul li {
         margin-right: 2rem; }
+  @media (max-width: 56.25em) {
+    header {
+      display: none; } }
 
 button {
   border: none;
@@ -181,10 +192,17 @@ button {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
   margin-top: 9rem; }
+  @media (max-width: 56.25em) {
+    .hero {
+      display: flex;
+      flex-direction: column; } }
   .hero__theatre {
     grid-column: 1 / 7; }
   .hero__desc {
     grid-column: 7 / 13; }
+    @media (max-width: 56.25em) {
+      .hero__desc {
+        margin-top: 6rem; } }
     .hero__desc__meta__date {
       display: flex;
       align-items: center; }
@@ -205,9 +223,18 @@ button {
 
 .participants {
   margin-top: 10rem; }
+  @media (max-width: 56.25em) {
+    .participants {
+      margin-top: 4rem; } }
   .participants ul {
     display: flex;
     margin-top: 6rem; }
+    @media (max-width: 56.25em) {
+      .participants ul {
+        width: 100%;
+        overflow-x: scroll;
+        padding: 0 0 0 12vw !important;
+        margin-top: 2rem; } }
     .participants ul li {
       background-color: #d4d4d4;
       padding: 2rem 4rem;
@@ -217,6 +244,9 @@ button {
       align-items: center;
       cursor: pointer;
       text-transform: capitalize; }
+      @media (max-width: 56.25em) {
+        .participants ul li {
+          padding: 0.4rem 2rem; } }
       .participants ul li:hover {
         background-color: #2d82df;
         color: white; }
@@ -241,6 +271,10 @@ button {
       max-width: 56rem;
       height: auto;
       margin: 0 2rem 0 0; }
+      @media (max-width: 56.25em) {
+        .participants--wrapper .participant {
+          min-width: 80vw;
+          max-width: 90vw; } }
       .participants--wrapper .participant:last-of-type {
         margin-right: 0; }
       .participants--wrapper .participant__pic {
@@ -272,17 +306,34 @@ button {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 2rem;
   margin: 10rem 0; }
+  @media (max-width: 56.25em) {
+    .support {
+      display: flex;
+      flex-direction: column;
+      position: relative; } }
   .support__title {
     grid-column: 1 / 7; }
     .support__title img {
       width: 100%;
       height: auto; }
+      @media (max-width: 56.25em) {
+        .support__title img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: -1; } }
   .support__text {
     grid-column: 7 / 10; }
+    @media (max-width: 56.25em) {
+      .support__text {
+        margin-top: 6rem; } }
     .support__text p {
       margin-bottom: 2rem; }
   .support__details {
     grid-column: 10 / 13; }
+    @media (max-width: 56.25em) {
+      .support__details {
+        padding-bottom: 2rem; } }
     .support__details > div {
       border-radius: 50px;
       border: 1px solid black;

@@ -1,9 +1,10 @@
+@import "../abstracts/mixins.scss";
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 12vw;
-
   .branding {
     display: flex;
     flex-direction: row;
@@ -27,5 +28,9 @@ header {
         margin-right: 2rem;
       }
     }
+  }
+  // PHONE ==========================================================================
+  @include respond(phone) {
+    display: none;
   }
 }
