@@ -138,12 +138,49 @@ button {
   display: flex;
   margin-top: 6rem; }
   .participants ul li {
-    background-color: #2d82df;
+    background-color: #d4d4d4;
     padding: 2rem 4rem;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center; }
+    .participants ul li.active {
+      background-color: #2d82df; }
+      .participants ul li.active p {
+        color: white; }
     .participants ul li p {
-      color: white;
+      color: black;
       text-transform: uppercase; }
+
+.participants--wrapper > div {
+  display: none;
+  justify-content: space-between; }
+
+.participants--wrapper div.visible {
+  display: flex; }
+
+.participants--wrapper .participant {
+  width: 45%;
+  max-width: 56rem;
+  height: auto;
+  margin: 8rem 2rem 0 0; }
+  .participants--wrapper .participant:last-of-type {
+    margin-right: 0; }
+  .participants--wrapper .participant__pic {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem; }
+    .participants--wrapper .participant__pic img {
+      width: 100%; }
+    .participants--wrapper .participant__pic > div {
+      position: absolute;
+      left: 2rem;
+      bottom: 2rem;
+      display: flex; }
+      .participants--wrapper .participant__pic > div .dot {
+        margin-right: 1rem;
+        background-color: #2d82df; }
+      .participants--wrapper .participant__pic > div p {
+        color: white; }
+  .participants--wrapper .participant__desc {
+    margin-top: 2rem; }

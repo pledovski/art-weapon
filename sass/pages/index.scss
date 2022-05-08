@@ -29,20 +29,71 @@
   }
 }
 
+// TABS SWITCHERS =======================
 .participants {
   ul {
     display: flex;
     margin-top: 6rem;
     li {
-      background-color: $color-main-b;
+      background-color: #d4d4d4;
       padding: 2rem 4rem;
       border-radius: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
+      &.active {
+        background-color: $color-main-b;
+        p {
+          color: white;
+        }
+      }
       p {
-        color: white;
+        color: black;
+
         text-transform: uppercase;
+      }
+    }
+  }
+  &--wrapper {
+    > div {
+      display: none;
+      justify-content: space-between;
+    }
+    div.visible {
+      display: flex;
+    }
+
+    .participant {
+      width: 45%;
+      max-width: 56rem;
+      height: auto;
+      margin: 8rem 2rem 0 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &__pic {
+        position: relative;
+        width: 100%;
+        margin-top: 2rem;
+        img {
+          width: 100%;
+        }
+        > div {
+          position: absolute;
+          left: 2rem;
+          bottom: 2rem;
+          display: flex;
+          .dot {
+            margin-right: 1rem;
+            background-color: $color-main-b;
+          }
+          p {
+            color: white;
+          }
+        }
+      }
+      &__desc {
+        margin-top: 2rem;
       }
     }
   }
