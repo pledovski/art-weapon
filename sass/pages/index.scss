@@ -1,5 +1,6 @@
 @import "../base/colors.scss";
 
+//HERO SECTION ===========================
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -29,8 +30,10 @@
   }
 }
 
+// PARTICIPANTS SECTION ===========================
 // TABS SWITCHERS =======================
 .participants {
+  margin-top: 10rem;
   ul {
     display: flex;
     margin-top: 6rem;
@@ -95,6 +98,36 @@
       &__desc {
         margin-top: 2rem;
       }
+    }
+  }
+}
+
+// SUPPORT SECTION ===========================
+.support {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 0.6rem;
+  margin-top: 10rem;
+  &__title {
+    grid-column: 1 / 7;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__text {
+    grid-column: 7 / 10;
+    &:first-child {
+      font-weight: bold;
+    }
+  }
+  &__details {
+    grid-column: 10 / 13;
+    > div {
+      border-radius: 50px;
+      border: 1px solid black;
+      padding: 3rem 4.2rem;
+      margin-top: 1.6rem;
     }
   }
 }
