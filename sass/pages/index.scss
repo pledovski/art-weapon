@@ -20,12 +20,15 @@
       }
       &__loc {
         display: flex;
-        margin-top: 1.2rem;
+        margin-top: 1rem;
         div {
           margin-right: 1rem;
           background-color: $color-main-y;
         }
       }
+    }
+    &__about {
+      margin-top: 3.2rem;
     }
   }
 }
@@ -58,19 +61,27 @@
     }
   }
   &--wrapper {
+    padding-left: 12vw;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    // margin-right: -4vw;
+    overflow-x: scroll;
     > div {
       display: none;
       justify-content: space-between;
+      margin-top: 8rem;
     }
     div.visible {
       display: flex;
     }
 
     .participant {
-      width: 45%;
+      position: relative;
+      min-width: 40vw;
       max-width: 56rem;
       height: auto;
-      margin: 8rem 2rem 0 0;
+      margin: 0 2rem 0 0;
       &:last-of-type {
         margin-right: 0;
       }

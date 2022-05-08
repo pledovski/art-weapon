@@ -129,10 +129,12 @@ button {
         background-color: #2d82df; }
     .hero__desc__meta__loc {
       display: flex;
-      margin-top: 1.2rem; }
+      margin-top: 1rem; }
       .hero__desc__meta__loc div {
         margin-right: 1rem;
         background-color: #ffc535; }
+    .hero__desc__about {
+      margin-top: 3.2rem; }
 
 .participants {
   margin-top: 10rem; }
@@ -153,36 +155,44 @@ button {
       .participants ul li p {
         color: black;
         text-transform: uppercase; }
-  .participants--wrapper > div {
-    display: none;
-    justify-content: space-between; }
-  .participants--wrapper div.visible {
-    display: flex; }
-  .participants--wrapper .participant {
-    width: 45%;
-    max-width: 56rem;
-    height: auto;
-    margin: 8rem 2rem 0 0; }
-    .participants--wrapper .participant:last-of-type {
-      margin-right: 0; }
-    .participants--wrapper .participant__pic {
+  .participants--wrapper {
+    padding-left: 12vw;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    overflow-x: scroll; }
+    .participants--wrapper > div {
+      display: none;
+      justify-content: space-between;
+      margin-top: 8rem; }
+    .participants--wrapper div.visible {
+      display: flex; }
+    .participants--wrapper .participant {
       position: relative;
-      width: 100%;
-      margin-top: 2rem; }
-      .participants--wrapper .participant__pic img {
-        width: 100%; }
-      .participants--wrapper .participant__pic > div {
-        position: absolute;
-        left: 2rem;
-        bottom: 2rem;
-        display: flex; }
-        .participants--wrapper .participant__pic > div .dot {
-          margin-right: 1rem;
-          background-color: #2d82df; }
-        .participants--wrapper .participant__pic > div p {
-          color: white; }
-    .participants--wrapper .participant__desc {
-      margin-top: 2rem; }
+      min-width: 40vw;
+      max-width: 56rem;
+      height: auto;
+      margin: 0 2rem 0 0; }
+      .participants--wrapper .participant:last-of-type {
+        margin-right: 0; }
+      .participants--wrapper .participant__pic {
+        position: relative;
+        width: 100%;
+        margin-top: 2rem; }
+        .participants--wrapper .participant__pic img {
+          width: 100%; }
+        .participants--wrapper .participant__pic > div {
+          position: absolute;
+          left: 2rem;
+          bottom: 2rem;
+          display: flex; }
+          .participants--wrapper .participant__pic > div .dot {
+            margin-right: 1rem;
+            background-color: #2d82df; }
+          .participants--wrapper .participant__pic > div p {
+            color: white; }
+      .participants--wrapper .participant__desc {
+        margin-top: 2rem; }
 
 .support {
   display: grid;
