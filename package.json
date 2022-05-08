@@ -4,7 +4,7 @@
   "description": "Art Weapon Event Site",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=development node app",
+    "start": "NODE_ENV=development node artweapon",
     "dev": "nodemon app",
     "compile:sass": "node-sass sass/main.scss public/css/main.css -w"
   },
