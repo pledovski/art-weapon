@@ -72,3 +72,78 @@ a:hover {
 
 ul {
   list-style: none; }
+
+.wrapper-main {
+  padding: 0 12vw; }
+
+.dot {
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 12vw; }
+  header .branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    header .branding img {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 2rem; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      header nav ul li {
+        margin-right: 2rem; }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #2d82df;
+  color: white;
+  padding: 1.9rem 4.7rem; }
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 0.6rem; }
+  .hero__theatre {
+    grid-column: 1 / 7; }
+  .hero__desc {
+    grid-column: 7 / 13; }
+    .hero__desc__meta__date {
+      display: flex; }
+      .hero__desc__meta__date div {
+        margin-right: 1rem;
+        background-color: #2d82df; }
+    .hero__desc__meta__loc {
+      display: flex;
+      margin-top: 1.2rem; }
+      .hero__desc__meta__loc div {
+        margin-right: 1rem;
+        background-color: #ffc535; }
+
+.participants ul {
+  display: flex;
+  margin-top: 6rem; }
+  .participants ul li {
+    background-color: #2d82df;
+    padding: 2rem 4rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .participants ul li p {
+      color: white;
+      text-transform: uppercase; }

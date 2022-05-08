@@ -1,0 +1,10 @@
+@import "../base/colors.scss";
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: $color-main-b;
+  color: white;
+  padding: 1.9rem 4.7rem;
+}

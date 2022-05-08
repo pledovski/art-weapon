@@ -1,0 +1,12 @@
+    <footer></footer>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <% for (let script of scripts) { %>
+        <script type="module" src="<%= script %>"></script>  
+    <% } %>
+
+    <!-- <script src="/js/utils/sockets/socket.io.js"></script> -->
+    <!-- <script src="/js/players/wavesurfer/wavesurfer.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.0/video.min.js"></script> -->
+    <script type="module" src="/js/app.bundle.js"></script>  
+</body>
+</html>

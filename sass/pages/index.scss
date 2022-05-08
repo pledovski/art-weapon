@@ -1,0 +1,49 @@
+@import "../base/colors.scss";
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 0.6rem;
+  &__theatre {
+    grid-column: 1 / 7;
+  }
+  &__desc {
+    grid-column: 7 / 13;
+    &__meta {
+      &__date {
+        display: flex;
+        div {
+          margin-right: 1rem;
+          background-color: $color-main-b;
+        }
+      }
+      &__loc {
+        display: flex;
+        margin-top: 1.2rem;
+        div {
+          margin-right: 1rem;
+          background-color: $color-main-y;
+        }
+      }
+    }
+  }
+}
+
+.participants {
+  ul {
+    display: flex;
+    margin-top: 6rem;
+    li {
+      background-color: $color-main-b;
+      padding: 2rem 4rem;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

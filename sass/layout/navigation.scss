@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 12vw;
+
+  .branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 2rem;
+    }
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

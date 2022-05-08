@@ -20,7 +20,7 @@ connectDB();
 
 // Define routes
 // View routes
-// const projectViews = require("./routes/view/projects");
+const indexView = require("./routes/views/index-views.routes");
 
 // API routes
 // const projects = require("./routes/api/projects");
@@ -74,7 +74,7 @@ if (process.env.NODE_ENV === "development") {
 // Mount routers
 // app.use("/api/v1/admin", users);
 
-// app.use(adminViews);
+app.use(indexView);
 
 app.use(errorController.get404);
 
