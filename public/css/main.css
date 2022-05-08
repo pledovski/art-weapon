@@ -203,7 +203,7 @@ button {
     .hero {
       display: flex;
       flex-direction: column;
-      margin-top: 16rem; } }
+      margin-top: 12rem; } }
   .hero__theatre {
     grid-column: 1 / 7; }
   .hero__desc {
