@@ -1,12 +1,15 @@
 <section class="participants">
   <h1 class="heading-1 wrapper-main">Учасники</h1>
   <ul class="tabs wrapper-main">
-    <li class="active"><p>театр</p></li>
-    <li><p>Візуальне мистецтво</p></li>
-    <li><p>Аудіо Перформанс</p></li>
-    <li><p>Кіно</p></li>
-    <li><p>освітня програма</p></li>
-    <li><p>Тату майстри</p></li>
+    <li class="paragraph active" id="theatre"><p>театр</p></li>
+    <li class="paragraph" id="music"><p>Аудіо Перформанс</p></li>
+    <li class="paragraph" id="visual"><p>Візуальне мистецтво</p></li>
+    <li class="paragraph" id="cinema"><p>Кіно</p></li>
+    <li class="paragraph" id="education"><p>освітня програма</p></li>
+    <li class="paragraph" id="tatoo"><p>Тату майстри</p></li>
   </ul>
-  <div class="participants--wrapper"><%- include("participants-section/music.ejs") %></div>
+  <div class="participants--wrapper">
+    <%- include("participants-section/music.ejs") %><%- include("participants-section/theatre.ejs")
+    %><%- include("participants-section/education.ejs") %>
+  </div>
 </section>

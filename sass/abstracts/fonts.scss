@@ -1,29 +1,24 @@
 @font-face {
-  font-family: "HKGrotesk-Regular";
-  src: url("../src/fonts/HKGrotesk/HKGrotesk-Regular.ttf") format("truetype");
+  font-family: "WorkSans-Regular";
+  src: url("../src/fonts/WorkSans/WorkSans-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto-Bold";
-  src: url("../src/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-family: "WorkSans-Bold";
+  src: url("../src/fonts/roboto/WorkSans-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url("../src/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-family: "WorkSans-Semibold";
+  src: url("../src/fonts/roboto/WorkSans-Semibold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "TenorSans-Regular";
-  src: url("../src/fonts/Tenor_Sans/TenorSans-Regular.ttf") format("truetype");
+  font-family: "WorkSans-Medium";
+  src: url("../src/fonts/roboto/WorkSans-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Mont-Regular";
-  src: url("/src/fonts/Mont/Mont-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Mont-SemiBold";
-  src: url("/src/fonts/Mont/Mont-SemiBold.otf") format("opentype");
+  font-family: "WorkSans-Black";
+  src: url("../src/fonts/roboto/WorkSans-Black.woff") format("woff");
 }

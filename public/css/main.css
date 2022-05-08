@@ -1,50 +1,42 @@
 @font-face {
-  font-family: "HKGrotesk-Regular";
-  src: url("../src/fonts/HKGrotesk/HKGrotesk-Regular.ttf") format("truetype"); }
+  font-family: "WorkSans-Regular";
+  src: url("../src/fonts/WorkSans/WorkSans-Regular.woff") format("woff"); }
 
 @font-face {
-  font-family: "Roboto-Bold";
-  src: url("../src/fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+  font-family: "WorkSans-Bold";
+  src: url("../src/fonts/roboto/WorkSans-Bold.woff") format("woff"); }
 
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url("../src/fonts/roboto/Roboto-Regular.ttf") format("truetype"); }
+  font-family: "WorkSans-Semibold";
+  src: url("../src/fonts/roboto/WorkSans-Semibold.woff") format("woff"); }
 
 @font-face {
-  font-family: "TenorSans-Regular";
-  src: url("../src/fonts/Tenor_Sans/TenorSans-Regular.ttf") format("truetype"); }
+  font-family: "WorkSans-Medium";
+  src: url("../src/fonts/roboto/WorkSans-Medium.woff") format("woff"); }
 
 @font-face {
-  font-family: "Mont-Regular";
-  src: url("/src/fonts/Mont/Mont-Regular.otf") format("opentype"); }
+  font-family: "WorkSans-Black";
+  src: url("../src/fonts/roboto/WorkSans-Black.woff") format("woff"); }
 
 @font-face {
-  font-family: "Mont-SemiBold";
-  src: url("/src/fonts/Mont/Mont-SemiBold.otf") format("opentype"); }
+  font-family: "WorkSans-Regular";
+  src: url("../src/fonts/WorkSans/WorkSans-Regular.woff") format("woff"); }
 
 @font-face {
-  font-family: "HKGrotesk-Regular";
-  src: url("../src/fonts/HKGrotesk/HKGrotesk-Regular.ttf") format("truetype"); }
+  font-family: "WorkSans-Bold";
+  src: url("../src/fonts/roboto/WorkSans-Bold.woff") format("woff"); }
 
 @font-face {
-  font-family: "Roboto-Bold";
-  src: url("../src/fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+  font-family: "WorkSans-Semibold";
+  src: url("../src/fonts/roboto/WorkSans-Semibold.woff") format("woff"); }
 
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url("../src/fonts/roboto/Roboto-Regular.ttf") format("truetype"); }
+  font-family: "WorkSans-Medium";
+  src: url("../src/fonts/roboto/WorkSans-Medium.woff") format("woff"); }
 
 @font-face {
-  font-family: "TenorSans-Regular";
-  src: url("../src/fonts/Tenor_Sans/TenorSans-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Mont-Regular";
-  src: url("/src/fonts/Mont/Mont-Regular.otf") format("opentype"); }
-
-@font-face {
-  font-family: "Mont-SemiBold";
-  src: url("/src/fonts/Mont/Mont-SemiBold.otf") format("opentype"); }
+  font-family: "WorkSans-Black";
+  src: url("../src/fonts/roboto/WorkSans-Black.woff") format("woff"); }
 
 *,
 *::before,
@@ -72,6 +64,76 @@ a:hover {
 
 ul {
   list-style: none; }
+
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("../src/fonts/WorkSans/WorkSans-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url("../src/fonts/roboto/WorkSans-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "WorkSans-Semibold";
+  src: url("../src/fonts/roboto/WorkSans-Semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("../src/fonts/roboto/WorkSans-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "WorkSans-Black";
+  src: url("../src/fonts/roboto/WorkSans-Black.woff") format("woff"); }
+
+.hero-font {
+  font: 500 16rem/10rem "WorkSans-Medium", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.heading-1 {
+  font: 400 9.6rem/10rem "WorkSans-Medium", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.heading-2 {
+  font: 500 2rem/2.8rem "WorkSans-Medium", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.heading-3 {
+  font: 500 3.5rem/4.5rem "WorkSans-Regular", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.heading-4 {
+  font: 400 1.8rem/2.2rem "WorkSans-Regular", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.heading-5 {
+  font: 400 1.8rem/2.2rem "WorkSans-Regular", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.paragraph {
+  font: 500 2rem/2.6rem "WorkSans-Medium", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.paragraph-bold {
+  font: bold 2rem/2.6rem "WorkSans-Bold", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.paragraph {
+  font: 500 2rem/2.6rem "WorkSans-Medium", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.paragraph-min {
+  font: 500 1.8rem/2.4rem "WorkSans-Bold", sans-serif, open-sans;
+  letter-spacing: normal;
+  text-transform: none; }
 
 .wrapper-main {
   padding: 0 12vw; }
@@ -117,18 +179,21 @@ button {
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 0.6rem; }
+  column-gap: 0.6rem;
+  margin-top: 9rem; }
   .hero__theatre {
     grid-column: 1 / 7; }
   .hero__desc {
     grid-column: 7 / 13; }
     .hero__desc__meta__date {
-      display: flex; }
+      display: flex;
+      align-items: center; }
       .hero__desc__meta__date div {
         margin-right: 1rem;
         background-color: #2d82df; }
     .hero__desc__meta__loc {
       display: flex;
+      align-items: center;
       margin-top: 1rem; }
       .hero__desc__meta__loc div {
         margin-right: 1rem;
@@ -154,7 +219,7 @@ button {
           color: white; }
       .participants ul li p {
         color: black;
-        text-transform: uppercase; }
+        text-transform: capitalize; }
   .participants--wrapper {
     padding-left: 12vw;
     display: flex;
@@ -177,15 +242,20 @@ button {
         margin-right: 0; }
       .participants--wrapper .participant__pic {
         position: relative;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 2rem; }
         .participants--wrapper .participant__pic img {
-          width: 100%; }
+          width: 100%;
+          object-fit: contain; }
         .participants--wrapper .participant__pic > div {
           position: absolute;
           left: 2rem;
           bottom: 2rem;
-          display: flex; }
+          display: flex;
+          justify-content: center;
+          align-items: center; }
           .participants--wrapper .participant__pic > div .dot {
             margin-right: 1rem;
             background-color: #2d82df; }
@@ -197,8 +267,8 @@ button {
 .support {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 0.6rem;
-  margin-top: 10rem; }
+  column-gap: 2rem;
+  margin: 10rem 0; }
   .support__title {
     grid-column: 1 / 7; }
     .support__title img {
@@ -206,12 +276,12 @@ button {
       height: auto; }
   .support__text {
     grid-column: 7 / 10; }
-    .support__text:first-child {
-      font-weight: bold; }
+    .support__text p {
+      margin-bottom: 2rem; }
   .support__details {
     grid-column: 10 / 13; }
     .support__details > div {
       border-radius: 50px;
       border: 1px solid black;
-      padding: 3rem 4.2rem;
+      padding: 2rem 3rem;
       margin-top: 1.6rem; }
