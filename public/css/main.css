@@ -86,14 +86,14 @@ ul {
   src: url("../src/fonts/WorkSans/WorkSans-Black.woff") format("woff"); }
 
 .hero-font {
-  font: 500 16rem/10rem "WorkSans-Medium", sans-serif, open-sans;
+  font: 500 16rem/12rem "WorkSans-Medium", sans-serif, open-sans;
   letter-spacing: normal;
-  text-transform: none; }
+  text-transform: uppercase; }
   @media (max-width: 56.25em) {
     .hero-font {
-      font: 300 10rem/6rem "WorkSans-Medium", sans-serif, open-sans;
+      font: 300 8rem/6rem "WorkSans-Medium", sans-serif, open-sans;
       letter-spacing: normal;
-      text-transform: none; } }
+      text-transform: uppercase; } }
 
 .heading-1 {
   font: 400 9.6rem/10rem "WorkSans-Medium", sans-serif, open-sans;

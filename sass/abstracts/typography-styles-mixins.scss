@@ -8,10 +8,10 @@ $font-worksans-black: "WorkSans-Black";
 
 // DESKTOP FONTS
 @mixin hero-font {
-  @include font($font-worksans-medium, 500, 16rem, 10rem, none, normal);
+  @include font($font-worksans-medium, 500, 16rem, 12rem, uppercase, normal);
 }
 @mixin hero-font--mob {
-  @include font($font-worksans-medium, 300, 10rem, 6rem, none, normal);
+  @include font($font-worksans-medium, 300, 8rem, 6rem, uppercase, normal);
 }
 
 @mixin heading-1 {
