@@ -88,10 +88,12 @@ ul {
 .hero-font {
   font: 500 16rem/10rem "WorkSans-Medium", sans-serif, open-sans;
   letter-spacing: normal;
-  text-transform: none;
-  font: 300 10rem/6rem "WorkSans-Medium", sans-serif, open-sans;
-  letter-spacing: normal;
   text-transform: none; }
+  @media (max-width: 56.25em) {
+    .hero-font {
+      font: 300 10rem/6rem "WorkSans-Medium", sans-serif, open-sans;
+      letter-spacing: normal;
+      text-transform: none; } }
 
 .heading-1 {
   font: 400 9.6rem/10rem "WorkSans-Medium", sans-serif, open-sans;
