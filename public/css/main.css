@@ -86,7 +86,7 @@ ul {
   src: url("../src/fonts/WorkSans/WorkSans-Black.woff") format("woff"); }
 
 .hero-font {
-  font: 500 16rem/12rem "WorkSans-Medium", sans-serif, open-sans;
+  font: 500 14rem/12rem "WorkSans-Medium", sans-serif, open-sans;
   letter-spacing: normal;
   text-transform: uppercase; }
   @media (max-width: 56.25em) {
