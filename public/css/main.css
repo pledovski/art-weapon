@@ -157,13 +157,13 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 12vw; }
+  padding: 2rem 12vw;
+  background-color: #ffc535; }
   @media (max-width: 56.25em) {
     header {
       position: fixed;
       z-index: 10;
       top: 0;
-      background-color: white;
       width: 100%; } }
   header .branding {
     display: flex;
