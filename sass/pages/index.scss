@@ -198,3 +198,37 @@
     }
   }
 }
+
+// TIMING SECTION ===========================
+.timing {
+  .wrapper {
+    padding-left: 12vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // flex-direction: row;
+    overflow-x: scroll;
+    height: 70vh;
+    width: 600rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+}
+
+// partners SECTION ===========================
+.partners {
+  > div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    > div {
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

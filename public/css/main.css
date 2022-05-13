@@ -350,3 +350,25 @@ button {
       border: 1px solid black;
       padding: 2rem 3rem;
       margin-top: 1.6rem; }
+
+.timing .wrapper {
+  padding-left: 12vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: scroll;
+  height: 70vh;
+  width: 600rem; }
+  .timing .wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; }
+
+.partners > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem; }
+  .partners > div > div {
+    width: 30%; }
+    .partners > div > div img {
+      width: 100%; }
