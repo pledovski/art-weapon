@@ -1,43 +1,63 @@
 @import "../abstracts/mixins.scss", "../base/colors.scss";
 
-header {
+.hero--2 {
+  pointer-events: none;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  grid-auto-rows: max-content;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 12vw;
-  background-color: $color-main-y;
+  align-items: flex-start;
   @include respond(phone) {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    // padding: 0;
-    width: 100%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: none;
   }
-  .branding {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    img {
-      width: 6rem;
-      height: 6rem;
-      margin-right: 2rem;
-    }
-  }
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // PHONE ==========================================================================
+  &--mob {
+    display: none;
     @include respond(phone) {
-      display: none;
+      display: flex;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
     }
     ul {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      li {
-        margin-right: 2rem;
+      width: 100%;
+      max-height: min-content;
+      h2 {
+        text-transform: uppercase;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: min-content;
+    li {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-black);
+      @include respond(tab_port) {
+        margin: 2rem 0;
+      }
+
+      a {
+        text-decoration: none;
+        &:hover {
+          color: $color-1;
+        }
+        h2 {
+          text-transform: uppercase;
+          border: 3px solid transparent;
+          padding: 1rem 1.5rem;
+          @include respond(phone) {
+            padding: 0.7rem 1rem;
+          }
+        }
       }
     }
   }

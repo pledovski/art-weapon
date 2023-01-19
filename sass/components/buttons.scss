@@ -1,10 +1,30 @@
-@import "../base/colors.scss";
+@import "../base/colors.scss", "../abstracts/mixins.scss";
 
 button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: $color-main-b;
-  color: white;
-  padding: 1.9rem 4.7rem;
+  // border: none;
+  // outline: none;
+  // cursor: pointer;
+  // background-color: $color-main-b;
+  // color: white;
+  // padding: 1.9rem 4.7rem;
+}
+
+.menu-btn {
+  pointer-events: none;
+  display: block;
+  background-image: url("../src/imgs/icons/menu-btn.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 8rem;
+  height: 8rem;
+  aspect-ratio: 1/1;
+  &:hover {
+    background-image: url("../src/imgs/icons/menu-btn-hover.svg");
+  }
+  @include respond(phone) {
+    background-image: url("../src/imgs/icons/menu-btn-mob.svg");
+    width: 4rem;
+    height: 4rem;
+  }
 }

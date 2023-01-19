@@ -1,11 +1,11 @@
 @import "../abstracts/typography-styles-mixins.scss";
 
-.hero-font {
-  @include hero-font;
-  @include respond(phone) {
-    @include hero-font--mob;
-  }
-}
+// .hero-font {
+//   @include hero-font;
+//   @include respond(phone) {
+//     @include hero-font--mob;
+//   }
+// }
 
 .heading-1 {
   @include heading-1;
@@ -16,31 +16,45 @@
 
 .heading-2 {
   @include heading-2;
-  // @include respond(phone) {
-  //   @include heading-2--mob;
-  // }
+  @include respond(phone) {
+    @include heading-2--mob;
+  }
 }
 
 .heading-3 {
+  @include heading-3;
   // @include respond(phone) {
   //   @include heading-3--mob;
   // }
-  @include heading-3;
 }
 
-.heading-4 {
-  @include heading-4;
-  // @include respond(phone) {
-  //   @include heading-4--mob;
-  // }
-}
+// .heading-4 {
+//   @include heading-4;
+//   // @include respond(phone) {
+//   //   @include heading-4--mob;
+//   // }
+// }
 
-.heading-5 {
-  @include heading-4;
-  // @include respond(phone) {
-  //   @include heading-4--mob;
-  // }
-}
+// .heading-5 {
+//   @include heading-4;
+//   // @include respond(phone) {
+//   //   @include heading-4--mob;
+//   // }
+// }
+
+// .paragraph {
+//   @include paragraph;
+//   // @include respond(phone) {
+//   //   @include heading-4--mob;
+//   // }
+// }
+
+// .paragraph-bold {
+//   @include paragraph-bold;
+//   // @include respond(phone) {
+//   //   @include heading-4--mob;
+//   // }
+// }
 
 .paragraph {
   @include paragraph;
@@ -49,23 +63,9 @@
   // }
 }
 
-.paragraph-bold {
-  @include paragraph-bold;
-  // @include respond(phone) {
-  //   @include heading-4--mob;
-  // }
-}
-
-.paragraph {
-  @include paragraph;
-  // @include respond(phone) {
-  //   @include heading-4--mob;
-  // }
-}
-
-.paragraph-min {
-  @include paragraph-min;
-  // @include respond(phone) {
-  //   @include heading-4--mob;
-  // }
-}
+// .paragraph-min {
+//   @include paragraph-min;
+//   // @include respond(phone) {
+//   //   @include heading-4--mob;
+//   // }
+// }

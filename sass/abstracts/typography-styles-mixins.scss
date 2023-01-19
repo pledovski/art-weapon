@@ -1,50 +1,52 @@
 @import "mixins.scss", "fonts.scss", "breakpoints.scss", "../base/colors.scss";
 
-$font-worksans-regular: "WorkSans-Regular";
-$font-worksans-bold: "WorkSans-Bold";
-$font-worksans-semibold: "WorkSans-Semibold";
-$font-worksans-medium: "WorkSans-Medium";
-$font-worksans-black: "WorkSans-Black";
+$font-Sk-Modernist-Mono: "Sk-Modernist-Mono";
+$Roboto-Regular: "Roboto-Regular";
+$DrukCyr-Heavy: "DrukCyr-Heavy";
 
 // DESKTOP FONTS
-@mixin hero-font {
-  @include font($font-worksans-medium, 500, 14rem, 12rem, uppercase, normal);
-}
-@mixin hero-font--mob {
-  @include font($font-worksans-medium, 300, 8rem, 6rem, uppercase, normal);
-}
+// @mixin hero-font {
+//   @include font($font-worksans-medium, 500, 14rem, 12rem, uppercase, normal);
+// }
+// @mixin hero-font--mob {
+//   @include font($font-worksans-medium, 300, 8rem, 6rem, uppercase, normal);
+// }
 
 @mixin heading-1 {
-  @include font($font-worksans-medium, 400, 9.6rem, 10rem, none, normal);
+  @include font($DrukCyr-Heavy, 400, 8rem, 8rem, none, normal);
 }
 @mixin heading-1--mob {
-  @include font($font-worksans-medium, 400, 4.6rem, 6rem, none, normal);
+  @include font($DrukCyr-Heavy, 400, 6rem, 8rem, none, normal);
 }
 
 @mixin heading-2 {
-  @include font($font-worksans-medium, 500, 2rem, 2.8rem, none, normal);
+  @include font($DrukCyr-Heavy, 900, 5.4rem, 5.4rem, none, normal);
+}
+
+@mixin heading-2--mob {
+  @include font($DrukCyr-Heavy, 500, 3.6rem, 2.8rem, none, normal);
 }
 
 @mixin heading-3 {
-  @include font($font-worksans-regular, 500, 3.5rem, 4.5rem, none, normal);
+  @include font($Roboto-Regular, 400, 2.4rem, 2.4rem, uppercase, normal);
 }
 
-@mixin heading-4 {
-  @include font($font-worksans-regular, 400, 1.8rem, 2.2rem, none, normal);
-}
+// @mixin heading-4 {
+//   @include font($font-worksans-regular, 400, 1.8rem, 2.2rem, none, normal);
+// }
 
-@mixin heading-5 {
-  @include font($font-worksans-regular, 500, 2.2rem, 2.2rem, none, normal);
-}
+// @mixin heading-5 {
+//   @include font($font-worksans-regular, 500, 2.2rem, 2.2rem, none, normal);
+// }
 
 @mixin paragraph {
-  @include font($font-worksans-medium, 500, 2rem, 2.6rem, none, normal);
+  @include font($Roboto-Regular, 500, 1.6rem, 1.6rem, none, normal);
 }
 
-@mixin paragraph-bold {
-  @include font($font-worksans-bold, bold, 2rem, 2.6rem, none, normal);
-}
+// @mixin paragraph-bold {
+//   @include font($font-worksans-bold, bold, 2rem, 2.6rem, none, normal);
+// }
 
-@mixin paragraph-min {
-  @include font($font-worksans-bold, 500, 1.8rem, 2.4rem, none, normal);
-}
+// @mixin paragraph-min {
+//   @include font($font-worksans-bold, 500, 1.8rem, 2.4rem, none, normal);
+// }

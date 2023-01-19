@@ -1,24 +1,14 @@
 @font-face {
-  font-family: "WorkSans-Regular";
-  src: url("../src/fonts/WorkSans/WorkSans-Regular.woff") format("woff");
+  font-family: "DrukCyr-Heavy";
+  src: url("../src/fonts/WorkSans/DrukCyr-Heavy.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "WorkSans-Bold";
-  src: url("../src/fonts/WorkSans/WorkSans-Bold.woff") format("woff");
+  font-family: "Roboto-Regular";
+  src: url("../src/fonts/WorkSans/Roboto-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "WorkSans-Semibold";
-  src: url("../src/fonts/WorkSans/WorkSans-Semibold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "WorkSans-Medium";
-  src: url("../src/fonts/WorkSans/WorkSans-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "WorkSans-Black";
-  src: url("../src/fonts/WorkSans/WorkSans-Black.woff") format("woff");
+  font-family: "Sk-Modernist-Mono";
+  src: url("../src/fonts/WorkSans/Sk-Modernist-Mono.otf") format("opentype");
 }
