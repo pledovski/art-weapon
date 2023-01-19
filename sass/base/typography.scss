@@ -58,9 +58,9 @@
 
 .paragraph {
   @include paragraph;
-  // @include respond(phone) {
-  //   @include heading-4--mob;
-  // }
+  @include respond(phone) {
+    @include paragraph--mob;
+  }
 }
 
 // .paragraph-min {

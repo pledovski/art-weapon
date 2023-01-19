@@ -32,7 +32,7 @@ $DrukCyr-Heavy: "DrukCyr-Heavy";
 }
 
 @mixin heading-3--mob {
-  @include font($Roboto-Regular, 400, 2.4rem, 3rem, uppercase, normal);
+  @include font($Roboto-Regular, 400, 2rem, 3rem, uppercase, normal);
 }
 
 // @mixin heading-4 {
@@ -43,13 +43,17 @@ $DrukCyr-Heavy: "DrukCyr-Heavy";
 //   @include font($font-worksans-regular, 500, 2.2rem, 2.2rem, none, normal);
 // }
 
-@mixin paragraph {
+@mixin tag {
   @include font($Roboto-Regular, 500, 1.6rem, 1.6rem, none, normal);
 }
 
-// @mixin paragraph-bold {
-//   @include font($font-worksans-bold, bold, 2rem, 2.6rem, none, normal);
-// }
+@mixin paragraph {
+  @include font($Roboto-Regular, 400, 2rem, 2.4rem, none, normal);
+}
+
+@mixin paragraph--mob {
+  @include font($Roboto-Regular, 400, 2rem, 2.6rem, none, normal);
+}
 
 // @mixin paragraph-min {
 //   @include font($font-worksans-bold, 500, 1.8rem, 2.4rem, none, normal);

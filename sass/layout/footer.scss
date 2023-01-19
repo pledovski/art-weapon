@@ -1,0 +1,6 @@
+footer.footer--mob {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: auto;
+  background-color: $color-0;
+}
