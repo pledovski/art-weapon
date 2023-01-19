@@ -23,9 +23,9 @@
 
 .heading-3 {
   @include heading-3;
-  // @include respond(phone) {
-  //   @include heading-3--mob;
-  // }
+  @include respond(phone) {
+    @include heading-3--mob;
+  }
 }
 
 // .heading-4 {

@@ -85,6 +85,11 @@ ul {
   font: 400 2.4rem/2.4rem "Roboto-Regular", sans-serif, open-sans;
   letter-spacing: normal;
   text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .heading-3 {
+      font: 400 2.4rem/3rem "Roboto-Regular", sans-serif, open-sans;
+      letter-spacing: normal;
+      text-transform: uppercase; } }
 
 .paragraph {
   font: 500 1.6rem/1.6rem "Roboto-Regular", sans-serif, open-sans;
@@ -404,3 +409,49 @@ ul {
     .footer__date h1 {
       text-transform: uppercase;
       align-self: flex-end; }
+
+.music--mob {
+  display: none; }
+  @media (max-width: 56.25em) {
+    .music--mob {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-auto-rows: max-content;
+      margin-top: 6rem; } }
+  .music--mob__controls {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; }
+    .music--mob__controls .arrow-left {
+      background-image: url("../src/imgs/icons/arrow-left.svg");
+      background-size: 5rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 5rem;
+      height: 5rem; }
+    .music--mob__controls .arrow-right {
+      background-image: url("../src/imgs/icons/arrow-right.svg");
+      background-size: 5rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 5rem;
+      height: 5rem; }
+    .music--mob__controls h1 {
+      text-transform: uppercase; }
+  .music--mob__content {
+    grid-column: 1 / 3;
+    display: flex;
+    margin-top: 4rem; }
+    .music--mob__content ul:last-of-type {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+    .music--mob__content h3 {
+      text-transform: uppercase; }
+  .music--mob__photo {
+    grid-column: 1 / 3;
+    margin-top: 4.4rem;
+    width: 100%;
+    height: auto; }
