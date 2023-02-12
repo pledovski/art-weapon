@@ -13,12 +13,12 @@ const xss = require("xss-clean");
 const rateLimit = require("express-rate-limit");
 const hpp = require("hpp");
 
-const log_visit = require("./utils/visitLogger");
+const { log_visit } = require("./utils/visitLogger");
 
 // Load env vars
-// dotenv.config({ path: "./config/config.env" });
+dotenv.config({ path: "./config/config.env" });
 
-// connectDB();
+connectDB();
 
 // Define routes
 // View routes
@@ -73,10 +73,9 @@ app.use(
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
-app.get("/", (req, res) => {
-  res.redirect("https://ra.co/events/1645227");
-  // console.log(req);
-  // log_visit.log_visit(req, res);
+app.get("/", async (req, res) => {
+  await log_visit(req, res);
+  res.status(307).redirect("https://ra.co/events/1645227");
 });
 
 // Mount routers
