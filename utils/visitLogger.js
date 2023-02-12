@@ -3,7 +3,7 @@ const fs = require("fs");
 const Path = require("path");
 
 exports.log_visit = (req, res) => {
-  const p = Path.resolve(`./_data/visits.json`);
+  const p = Path.resolve(`./public/visits.json`);
   fs.readFile(p, "utf-8", (err, data) => {
     let visits = [];
     const ip = req.socket.remoteAddress;
