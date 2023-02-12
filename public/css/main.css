@@ -71,6 +71,11 @@ ul {
       font: 400 6rem/8rem "DrukCyr-Heavy", sans-serif, open-sans;
       letter-spacing: normal;
       text-transform: none; } }
+  @media (max-width: 90em) {
+    .heading-1 {
+      font: 400 6rem/6.4rem "DrukCyr-Heavy", sans-serif, open-sans;
+      letter-spacing: normal;
+      text-transform: none; } }
 
 .heading-2 {
   font: 900 5.4rem/5.4rem "DrukCyr-Heavy", sans-serif, open-sans;
@@ -81,6 +86,11 @@ ul {
       font: 500 3.6rem/2.8rem "DrukCyr-Heavy", sans-serif, open-sans;
       letter-spacing: normal;
       text-transform: none; } }
+  @media (max-width: 90em) {
+    .heading-2 {
+      font: 500 4.8rem/4.4rem "DrukCyr-Heavy", sans-serif, open-sans;
+      letter-spacing: normal;
+      text-transform: none; } }
 
 .heading-3 {
   font: 400 2.4rem/2.4rem "Roboto-Regular", sans-serif, open-sans;
@@ -89,6 +99,11 @@ ul {
   @media (max-width: 56.25em) {
     .heading-3 {
       font: 400 2rem/3rem "Roboto-Regular", sans-serif, open-sans;
+      letter-spacing: normal;
+      text-transform: uppercase; } }
+  @media (max-width: 90em) {
+    .heading-3 {
+      font: 400 1.8rem/2.4rem "Roboto-Regular", sans-serif, open-sans;
       letter-spacing: normal;
       text-transform: uppercase; } }
 
@@ -119,7 +134,7 @@ ul {
 
 .border-1 {
   border: 3px solid black;
-  padding: 1rem 1.5rem; }
+  padding: 0.8rem 1.2rem; }
 
 .vitsche-small-logo {
   background-image: url("../src/imgs/logos/vitsche.svg"); }
@@ -204,8 +219,8 @@ footer.footer--mob {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 8rem;
-  height: 8rem;
+  width: 6.6rem;
+  height: 6.6rem;
   aspect-ratio: 1/1; }
   .menu-btn:hover {
     background-image: url("../src/imgs/icons/menu-btn-hover.svg"); }
@@ -238,7 +253,7 @@ footer.footer--mob {
   grid-template-columns: repeat(3, 1fr);
   row-gap: 2rem;
   column-gap: 4.8rem;
-  grid-template-rows: 8rem auto auto 10rem;
+  grid-template-rows: 8rem auto auto 8rem;
   width: 100%; }
   @media (max-width: 56.25em) {
     .hero {
@@ -398,7 +413,7 @@ footer.footer--mob {
         padding-left: 0; } }
     .footer__address h1 {
       text-transform: uppercase;
-      margin-bottom: -0.5rem; }
+      margin-bottom: -1.2rem; }
     .footer__address a {
       display: block;
       align-self: flex-end;

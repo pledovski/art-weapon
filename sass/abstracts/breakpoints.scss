@@ -20,16 +20,17 @@
 // 600 - 900px     Tablet portrait     -   tab-port
 // 900 - 1200px    Tablet landscape    -   tab-land
 // [1200 - 1800]   normal styles
-// 1800px + :      Big desctop         -   big-desk
+// 1800px + :      Big desktop         -   big-desk
 
 // 1em = 16px
 
 // $phone: 37.5em; //600px;
-$phone: 56.25em; //600px;
-$tab-port: 56.25em; //900px
+$phone: 56.25em; //900px;
+// $tab-port: 56.25em; //900px
 $tab-land: 75em; //1200px
-$big-desk: 112.5em; //1800px
 $med-desk: 90em; //1440px retina
+$big-desk: 112.5em; //1800px
+
 // $retina2x: (-webkit-min-device-pixel-ratio: 2),
 //   (
 //     min-device-pixel-ratio: 2

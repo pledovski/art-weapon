@@ -9,37 +9,37 @@
       @content;
     }
   }
-  @if $breakpoint == tab-port {
-    @media ($tab-port) {
-      //900px
-      @content;
-    }
-  }
+  // @if $breakpoint == tab-port {
+  //   @media ($tab-port) {
+  //     //900px
+  //     @content;
+  //   }
+  // }
   @if $breakpoint == tab-land {
-    @media ($tab-land) {
+    @media (max-width: $tab-land) {
       //1200px
       @content;
     }
   }
-  @if $breakpoint == big-desk {
-    @media ($big-desk) {
-      //1800px
-      @content;
-    }
-  }
+  // @if $breakpoint == big-desk {
+  //   @media ($big-desk) {
+  //     //1800px
+  //     @content;
+  //   }
+  // }
   @if $breakpoint == med-desk {
-    @media (min-width: $med-desk) {
+    @media (max-width: $med-desk) {
       //1440px
       @content;
     }
   }
 
-  @if $breakpoint == big-desk {
-    @media (min-width: 160em) {
-      //2560px
-      @content;
-    }
-  }
+  // @if $breakpoint == big-desk {
+  //   @media (min-width: 160em) {
+  //     //2560px
+  //     @content;
+  //   }
+  // }
 }
 
 // Font styling mixin

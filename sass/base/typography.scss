@@ -12,6 +12,9 @@
   @include respond(phone) {
     @include heading-1--mob;
   }
+  @include respond(med-desk) {
+    @include heading-1--med-desk;
+  }
 }
 
 .heading-2 {
@@ -19,12 +22,18 @@
   @include respond(phone) {
     @include heading-2--mob;
   }
+  @include respond(med-desk) {
+    @include heading-2--med-desk;
+  }
 }
 
 .heading-3 {
   @include heading-3;
   @include respond(phone) {
     @include heading-3--mob;
+  }
+  @include respond(med-desk) {
+    @include heading-3--med-desk;
   }
 }
 
