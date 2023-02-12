@@ -31,7 +31,8 @@ exports.log_visit = (req, res) => {
 
     fs.writeFile("./_data/visits.json", JSON.stringify(visits), (err) => {
       if (err) {
-        console.log(22222);
+        console.error(err);
+        res.send("An error occurred.");
       } else {
         res.send(visits);
         // res.redirect("https://ra.co/events/1645227");
