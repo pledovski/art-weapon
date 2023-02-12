@@ -1,0 +1,50 @@
+[
+  {
+    "name": "The Lazy Jezus",
+    "slug": "the-lazy-jezus",
+    "stage": "Music stage",
+    "description": "The Lazy Jesus is a Ukrainian DJ and sound producer who is always exploring multiple genres, looking for different music as deeply as possible. Recently, his focus has been on the ethnic sound of different regions of the world, which he embodies in his own work and in a series of specific events dedicated to the modern interpretation of ancient sounds. It was that passion that led The Lazy Jesus to want to delve into Ukrainian folk culture and present its most valuable achievements in his material. This project, titled UA TRIBAL, is the product of a close interaction between sound and visual art inspired by the music of our ancestors. Aiming to spread this sacred experience beyond Ukraine, The Lazy Jesus will also present his project at the \"Art - Weapon!\" festival."
+  },
+  {
+    "name": "RUCIIICK",
+    "slug": "rusiiick",
+    "stage": "Music stage",
+    "description": "RUSIIICK is a Kyiv-based artist who has revolutionized the Ukrainian hip-hop and electronic scene over the past year. His distinctive style is an emotional outpouring of feelings in a dynamic recitative, which is the quintessence of a modern Ukrainian's acute experiences and feelings. In his lyrics, RUSIIICK embodies the atmosphere of the Ukrainian capital during the war, events and phenomena that make the heart of the country beat on despite the awareness of the oppressive reality. In Berlin, the artist will present material inspired by the last year of his life in Ukraine. For this performance, RUSIIICK will reunite with his band, culminating in a non-stop electronic instrumental live show to emphasize the energy and passion of his songs."
+  },
+  {
+    "name": "Stas Koroliov",
+    "slug": "stas-koroliov",
+    "stage": "Music stage",
+    "description": "Stas Koroliov is a Kyiv-based audiovisual jazz-rock band that sets great value on innovation and fresh ideas in its work, especially when realizing live performances. The band's material is closely related to the war theme, as Stas is from the Donetsk region, which has been occupied for the last 9 years. The band explores new ways of releasing emotions and experiences in their music and constantly interacts with people who have faced difficult trials. Therefore, in December 2022, Stas Koroliov toured ten Ukrainian cities that have experienced large-scale hostilities, occupation, or are still under massive shelling. Currently, Stas Koroliov is presenting a program that was created after russia's full-scale invasion of Ukraine - a psychedelic audiovisual jazz-rock stream. It explores different manifestations of emotions and moods of a person in the space of uncertainty, who is looking for new meanings of life and self-expression."
+  },
+  {
+    "Name": "Sensitive Content",
+    "slug": "sensitive-content",
+    "stage": "Music stage",
+    "description": "Sensitive Content is Ukrainian live performance project created in the process of close collaboration between four independent artists: Oleksandr Filonenko (Monoconda), Yegor Gavrilenko (The Lazy Jesus), Andriy Barmaliy, and Oleksandr Yavdek. Each of them brought their unique musical experience to Sensitive Content, gained over the years of participation in various music projects. The sound of this quartet is based on modern representations of the late 90s D'n'B sound, which was embodied in projects such as Roni Size or London Electricity. In their performances, Sensitive Content completely rethink the drum and bass genre, combining it with jazz, jungle, and dub, forming a mixture that impresses with its energy charge. That's why Sensitive Content members call the moment of their own performances the time when real magic happens."
+  },
+  {
+    "Name": "Warнякання",
+    "slug": "warnyakannya",
+    "stage": "Music stage",
+    "description": "WARNYAKANNYA is a Ukrainian project that aims to do more than create music. It is a documentary and therapeutic product by Anton Slepakov and Andriy Sokolov, which is, created in real time, the artists' synchronized reflection on military events in Ukraine. Each of their performances is a combination of improvised poetry and electronic music, in which the artists share their emotions. Over the past year, WARNYAKANNYA has presented its reflective performances in 50 cities in Ukraine and Europe, and one of their next stops is the \"Art - Weapon!\" festival. The project is a charitable one - the proceeds from track sales and donations at the performances go to the needs of volunteers and the military defending Ukraine."
+  },
+  {
+    "Name": "Kurs Valut",
+    "slug": "kurs-valut",
+    "stage": "Music stage",
+    "description": "Kurs Valüt is an electronic duo of Yevhen Gordeyev and Yevhen Kasiyan from the industrial Ukrainian city of Dnipro, whose atmosphere influenced the main mood of the band's music. The sound of Kurs Valüt forms a unique niche of the Minimal Wave genre in Ukraine, representing a mixture of EBM with electro, synth-pop and Italo. The duo's lyrics are based on lyrical and socially acute topics that also resonate with the difficult phases of the authors' personal lives. Thus, the driving force behind Kurs Valüt's work is the aesthetic transformation of the internal and external crises of society into the energy of the dance floor."
+  },
+  {
+    "Name": "OTOY",
+    "slug": "otoy",
+    "stage": "Music stage",
+    "description": "OTOY is a Ukrainian hip-hop artist who, in his work, embodies his own perception of the world and the experiences that accompanied him throughout his life and that are constantly changing. In recent years, the musician has become a household name for the Ukrainian audience due to his material's reflection of personal values of mutual respect, the importance of mental health and the preservation of local traditions. OTOY will present his performance at the festival as a liminal state between dark and light in his own thoughts and soul. With this symbolism, he will show the emotions that Ukrainians have been experiencing for the last year - from one extreme to another."
+  },
+  {
+    "Name": "Tonka",
+    "slug": "tonka",
+    "stage": "Music stage",
+    "description": "Tonka is a Ukrainian electronic Indie Pop band that combines modern sound with non-trivial experiments and Ukrainian-language lyrics. In creating their material, the artists are often inspired by the works of classical Ukrainian poetry and give them a new impulse to popularization through original arrangements. In recent years, Tonka has been widely distributed at Ukrainian and international festivals. In 2020, the band was included in the Ukrainian Institute's music catalog, taking first place in the mainstream Indie category to represent the Ukrainian scene in Europe."
+  }
+]

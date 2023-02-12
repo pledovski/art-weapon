@@ -1,26 +1,6 @@
 @import "../base/colors.scss", "../abstracts/mixins.scss";
 
-//HERO SECTION ===========================
-.main-page-bg {
-  background-image: url("../src/imgs/main-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  &__overlay {
-    background-image: url("../src/imgs/main-bg-overlay.png");
-    background-size: auto 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    @include respond(phone) {
-      background-size: 90% auto;
-      background-position: bottom 20% center;
-    }
-  }
-}
-
-.hero {
+.music {
   display: grid;
   position: relative;
   grid-template-columns: repeat(3, 1fr);
@@ -92,7 +72,9 @@
         margin-top: 0.4rem;
         display: flex;
         > *:hover {
-          color: $color-1;
+          background-image: linear-gradient(to right, #2d20d3, #9b7562);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
         a {
           display: flex;
@@ -145,7 +127,9 @@
           text-transform: uppercase;
           cursor: pointer;
           &:hover {
-            color: $color-1;
+            background-image: linear-gradient(to right, #2d20d3, #9b7562);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         }
       }
@@ -259,7 +243,7 @@
   }
 }
 
-.music {
+.music--2 {
   &--mob {
     display: none;
     @include respond(phone) {

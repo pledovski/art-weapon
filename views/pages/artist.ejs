@@ -1,16 +1,16 @@
-<%- include('layout/head.ejs') %>
+<%- include('../layout/head.ejs') %>
 
 <body class="">
   <main class="">
-    <div class="main-page-bg">
-      <div class="main-page-bg__overlay">
-        <section class="hero wrapper-main">
+    <div class="artist-page-bg">
+      <div class="">
+        <section class="artist wrapper-main">
           <!-- logo -->
-          <div class="hero--1">
+          <div class="artist--1">
             <img src="/src/imgs/logos/hero-logo-anim.gif" alt="art weapon logo" class="" />
           </div>
           <!-- navigation -->
-          <div class="hero--2--mob">
+          <div class="artist--2--mob">
             <ul>
               <li>
                 <a href="" class="menu-btn"></a>
@@ -25,7 +25,7 @@
               </li>
             </ul>
           </div>
-          <div class="hero--2">
+          <div class="artist--2">
             <ul>
               <!-- <li>
                 <a href=""><h2 class="heading-2">Timetable</h2></a>
@@ -38,12 +38,10 @@
               </li> -->
             </ul>
           </div>
-          <!-- berliner-baer -->
-          <div class="hero--3">
-            <img src="/src/imgs/Berliner-Baer.png" alt="" class="" />
-          </div>
+          <!-- content -->
+          <div class="artist--3"></div>
           <!-- lineup -->
-          <div class="hero--4">
+          <div class="artist--4">
             <ul>
               <li>
                 <a href="" class="lineup__item"
@@ -116,8 +114,8 @@
               </li>
             </ul>
           </div>
-          <!-- areas -->
-          <div class="hero--5">
+          <!-- action -->
+          <div class="artist--5">
             <ul>
               <li>
                 <a href="https://ra.co/events/1645227" target="_blank"
@@ -128,33 +126,24 @@
                 <a href="" class="menu-btn"></a>
               </li>
             </ul>
+          </div>
+          <!-- content -->
+          <div class="artist--9 gallery">
             <ul>
+              <% for (let item of artist.content) { %>
               <li>
-                <a href="/"><h1 class="heading-1">Music</h1></a>
+                <img src="<%= item %>" alt="" />
               </li>
-              <li>
-                <a href="/theatre">
-                  <h1 class="heading-1">Theatre</h1>
-                </a>
-              </li>
-              <li>
-                <a href="/exhibition">
-                  <h1 class="heading-1">Exhibition</h1>
-                </a>
-              </li>
-              <li>
-                <h1 class="heading-1">Art market</h1>
-              </li>
-              <li>
-                <h1 class="heading-1">Tatoo</h1>
-              </li>
-              <li>
-                <h1 class="heading-1">Food court</h1>
-              </li>
+              <% } %>
             </ul>
           </div>
+          <div class="artist--10 description">
+            <div class="artist--10__left"></div>
+            <div class="artist--10__right"></div>
+          </div>
+
           <!-- footer -->
-          <div class="hero--6 footer">
+          <div class="artist--6 footer">
             <div class="footer__address">
               <h1 class="heading-1">Berlin</h1>
               <a
@@ -168,7 +157,7 @@
             </div>
           </div>
           <!-- partners -->
-          <div class="hero--7 partners">
+          <div class="artist--7 partners">
             <div class="footer__partners">
               <div class="vitsche-small-logo footer-logo"></div>
               <div class="polygon-small-logo footer-logo"></div>
@@ -176,7 +165,7 @@
             </div>
           </div>
           <!-- date -->
-          <div class="hero--8 date">
+          <div class="artist--8 date">
             <h1 class="heading-1 text">25 February</h1>
             <h1 class="heading-1 text--mob">25 Feb</h1>
             <h1 class="heading-3 text--mob">DOOR 12:00</h1>
@@ -185,13 +174,13 @@
       </div>
     </div>
 
-    <section class="music--mob wrapper-main" id="lineup--mob">
-      <div class="music--mob__controls">
+    <section class="artist--mob wrapper-main" id="lineup--mob">
+      <div class="artist--mob__controls">
         <!-- <div class="arrow-left"></div> -->
-        <h1 class="heading-1">Music</h1>
+        <h1 class="heading-1">artist</h1>
         <!-- <div class="arrow-right"></div> -->
       </div>
-      <div class="music--mob__content">
+      <div class="artist--mob__content">
         <ul>
           <li>
             <a href="" class=""
@@ -266,17 +255,17 @@
           </li>
         </ul>
       </div>
-      <img src="/src/imgs/music-pic.png" alt="hooligan art community" class="music--mob__photo" />
-      <div class="music--mob__desc">
+      <img src="/src/imgs/artist-pic.png" alt="hooligan art community" class="artist--mob__photo" />
+      <div class="artist--mob__desc">
         <h3 class="heading-3">About</h3>
         <p class="paragraph">
           One of the main locations of the festival will be a huge hall with a panoramic canvas and
-          projectors with the combination with the music of Ukrainian artists, will complement their
-          performances with modern digital art. With the help of digital projections, artists create
-          a new interaction with the viewer.
+          projectors with the combination with the artist of Ukrainian artists, will complement
+          their performances with modern digital art. With the help of digital projections, artists
+          create a new interaction with the viewer.
         </p>
       </div>
     </section>
   </main>
 </body>
-<%- include('layout/end.ejs') %>
+<%- include('../layout/end.ejs') %>

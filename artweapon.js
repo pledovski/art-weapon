@@ -21,6 +21,7 @@ const hpp = require("hpp");
 // Define routes
 // View routes
 const indexView = require("./routes/views/index-views.routes");
+const artistView = require("./routes/views/artist-views.routes");
 
 // API routes
 // const projects = require("./routes/api/projects");
@@ -70,11 +71,15 @@ app.use(
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
+app.get("/", (req, res) => {
+  res.redirect("https://ra.co/events/1645227");
+});
 
 // Mount routers
 // app.use("/api/v1/admin", users);
 
 app.use(indexView);
+app.use(artistView);
 
 app.use(errorController.get404);
 
