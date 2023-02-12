@@ -1,5 +1,7 @@
 const asyncHandler = require("../../middleware/async");
 
+const fs = require("fs");
+
 // @desc    Get index view
 // @route   GET /
 // @access  Public
@@ -73,5 +75,21 @@ exports.exhibitionView = asyncHandler(async (req, res, next) => {
     path: "/theatre",
     lineup,
     scripts: [""],
+  });
+});
+
+// @desc    Get visits view
+// @route   GET /visits
+// @access  Public
+exports.getVisits = asyncHandler(async (req, res, next) => {
+  fs.readFile("./_data/visits.json", "utf-8", (err, data) => {
+    if (err) {
+      console.error(err);
+      res.send("An error occurred.");
+    } else {
+      const json = JSON.parse(data);
+      json.unshift({ total_visits: json.length });
+      res.status(200).send(json);
+    }
   });
 });
