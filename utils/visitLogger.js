@@ -2,7 +2,8 @@ const geoip = require("geoip-lite");
 const fs = require("fs");
 
 exports.log_visit = (req, res) => {
-  fs.readFile("./_data/visits.json", "utf-8", (err, data) => {
+  const p = Path.resolve(`./_data/visits.json`);
+  fs.readFile(p, "utf-8", (err, data) => {
     let visits = [];
     const ip = req.socket.remoteAddress;
     const location = geoip.lookup(ip);
@@ -29,7 +30,7 @@ exports.log_visit = (req, res) => {
       });
     }
 
-    fs.writeFile("./_data/visits.json", JSON.stringify(visits), (err) => {
+    fs.writeFile(p, JSON.stringify(visits), (err) => {
       if (err) {
         console.error(err);
         res.send("An error occurred.");
