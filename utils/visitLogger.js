@@ -4,6 +4,8 @@ const Visit = require("../models/Visit");
 
 exports.log_visit = async (req, res, next) => {
   let ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
+  console.log(req.headers["x-forwarded-for"], req.connection.remoteAddress);
+
   const location = geoip.lookup(ip);
 
   let visit = await Visit.create({
