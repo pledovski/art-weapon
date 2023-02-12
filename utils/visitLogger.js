@@ -2,7 +2,6 @@ const geoip = require("geoip-lite");
 const fs = require("fs");
 
 exports.log_visit = (req, res) => {
-  console.log(req);
   fs.readFile("./_data/visits.json", "utf-8", (err, data) => {
     let visits = [];
     const ip = req.socket.remoteAddress;
@@ -29,16 +28,13 @@ exports.log_visit = (req, res) => {
         headers: req.headers,
       });
     }
-    console.log(visits);
 
     fs.writeFile("./_data/visits.json", JSON.stringify(visits), (err) => {
       if (err) {
-        // console.error(err);
-        // res.send("An error occurred.");
-        res.redirect("https://ra.co/events/1645227");
+        console.log(22222);
       } else {
-        // res.send(`Number of visits: ${visits.length}`);
-        res.redirect("https://ra.co/events/1645227");
+        res.send(visits);
+        // res.redirect("https://ra.co/events/1645227");
       }
     });
   });
