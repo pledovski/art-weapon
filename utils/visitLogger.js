@@ -1,5 +1,6 @@
 const geoip = require("geoip-lite");
 const fs = require("fs");
+const Path = require("path");
 
 exports.log_visit = (req, res) => {
   const p = Path.resolve(`./_data/visits.json`);
