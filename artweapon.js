@@ -74,8 +74,9 @@ if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
 app.get("/", (req, res) => {
-  console.log(req);
-  log_visit.log_visit(req, res);
+  res.redirect("https://ra.co/events/1645227");
+  // console.log(req);
+  // log_visit.log_visit(req, res);
 });
 
 // Mount routers
