@@ -2,6 +2,7 @@ const geoip = require("geoip-lite");
 const fs = require("fs");
 
 exports.log_visit = (req, res) => {
+  console.log(req);
   fs.readFile("./_data/visits.json", "utf-8", (err, data) => {
     let visits = [];
     const ip = req.socket.remoteAddress;
@@ -28,6 +29,7 @@ exports.log_visit = (req, res) => {
         headers: req.headers,
       });
     }
+    console.log(visits);
 
     fs.writeFile("./_data/visits.json", JSON.stringify(visits), (err) => {
       if (err) {
