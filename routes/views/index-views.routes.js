@@ -3,14 +3,16 @@ const router = express.Router();
 
 const {
   getIndexView,
-  theatreView,
-  exhibitionView,
+  getMusicView,
+  getTheatreView,
+  getExhibitionView,
   getVisits,
 } = require("../../controllers/views/index-views.controllers");
 
 router.route("/").get(getIndexView);
-router.route("/theatre").get(theatreView);
-router.route("/exhibition").get(exhibitionView);
+router.route("/music").get(getMusicView);
+router.route("/theatre").get(getTheatreView);
+router.route("/exhibition").get(getExhibitionView);
 router.route("/visits").get(getVisits);
 
 module.exports = router;

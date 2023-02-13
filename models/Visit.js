@@ -24,6 +24,10 @@ const VisitSchema = new mongoose.Schema({
     type: Object,
     required: true,
   },
+  created_at: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 module.exports = mongoose.model("Visit", VisitSchema);
