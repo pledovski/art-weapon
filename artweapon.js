@@ -76,10 +76,10 @@ app.use(
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
-// app.get("/", async (req, res) => {
-//   await log_visit(req, res);
-//   res.status(307).redirect("https://www.instagram.com/artweapon.festival/");
-// });
+app.get("/", async (req, res) => {
+  await log_visit(req, res);
+  res.status(307).redirect("https://www.instagram.com/artweapon.festival/");
+});
 
 // Mount routers
 // app.use("/api/v1/admin", users);
