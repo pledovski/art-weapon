@@ -78,7 +78,7 @@ if (process.env.NODE_ENV === "development") {
 }
 app.get("/", async (req, res) => {
   await log_visit(req, res);
-  res.status(307).redirect("https://ra.co/events/1645227");
+  res.status(307).redirect("https://www.instagram.com/artweapon.festival/");
 });
 
 // Mount routers
