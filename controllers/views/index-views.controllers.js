@@ -122,7 +122,7 @@ exports.getExhibitionView = asyncHandler(async (req, res, next) => {
 // @route   GET /visits
 // @access  Public
 exports.getVisits = asyncHandler(async (req, res, next) => {
-  const visits = await Visit.find();
+  const visits = await Visit.find().sort({ created_at: -1 });
   visits.unshift({ count: visits.length });
   res.status(200).send(visits);
 });
