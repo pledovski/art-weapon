@@ -1,10 +1,10 @@
 @font-face {
   font-family: "DrukCyr-Heavy";
-  src: url("../src/fonts/WorkSans/DrukCyr-Heavy.ttf") format("truetype"); }
+  src: url("../src/fonts/DrukCyr/DrukCyr-Heavy.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../src/fonts/WorkSans/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../src/fonts/Roboto/Roboto-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Sk-Modernist-Mono";
@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: "DrukCyr-Heavy";
-  src: url("../src/fonts/WorkSans/DrukCyr-Heavy.ttf") format("truetype"); }
+  src: url("../src/fonts/DrukCyr/DrukCyr-Heavy.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../src/fonts/WorkSans/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../src/fonts/Roboto/Roboto-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Sk-Modernist-Mono";
@@ -52,11 +52,11 @@ ul {
 
 @font-face {
   font-family: "DrukCyr-Heavy";
-  src: url("../src/fonts/WorkSans/DrukCyr-Heavy.ttf") format("truetype"); }
+  src: url("../src/fonts/DrukCyr/DrukCyr-Heavy.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../src/fonts/WorkSans/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../src/fonts/Roboto/Roboto-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: "Sk-Modernist-Mono";
