@@ -57,6 +57,9 @@ app.use(
   })
 );
 
+// Allow proxy to get client IP
+app.set("trust proxy", true);
+
 // Prevent http param pollution
 app.use(hpp());
 
