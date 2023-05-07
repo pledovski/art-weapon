@@ -76,7 +76,7 @@ app.use(
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
-app.get("/", async (req, res) => {
+app.get("/brudnyi-pes", async (req, res) => {
   await log_visit(req, res);
   res.status(307).redirect("https://ottry.com/services/warp/brudnyi-pes");
 });
