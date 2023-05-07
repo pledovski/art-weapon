@@ -78,7 +78,7 @@ if (process.env.NODE_ENV === "development") {
 }
 app.get("/", async (req, res) => {
   await log_visit(req, res);
-  res.status(307).redirect("https://www.instagram.com/artweapon.festival/");
+  res.status(307).redirect("https://ottry.com/services/warp/brudnyi-pes");
 });
 
 // Mount routers
@@ -103,5 +103,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 app.listen(PORT, IP, () => {
-  console.log(`Server running in ${process.env.NODE_ENV} mode on ${IP}:${PORT}`);
+  console.log(
+    `Server running in ${process.env.NODE_ENV} mode on ${IP}:${PORT}`
+  );
 });
